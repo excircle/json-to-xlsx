@@ -1,0 +1,20 @@
+---
+services:
+  db:
+    image: mariadb:10.10.2
+    container_name: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=PhAcKeJPg3qsfAOC
+      - MYSQL_DATABASE=faux-db
+      - MYSQL_USER=faux
+      - MYSQL_PASSWORD=PhAcKeJPg3qsfAOC
+  python:
+    image: python:3.10.14-slim-bookworm
+    container_name: mypy
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./python-home:/home

@@ -1,0 +1,10 @@
+{
+    "package": "family",
+    "price": "$399.99",
+    "redeemed": "false",
+    "package_members" : {
+        "husband": "joe",
+        "wife": "jane",
+        "kid": "malort"
+    }
+}
